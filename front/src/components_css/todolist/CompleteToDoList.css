@@ -1,0 +1,34 @@
+.complete-list {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    display: grid;
+    place-items: center;
+    background-color: #4d4949c7;
+}
+.complete-list .close-complete {
+    top: 0;
+    right: 0;
+    position: absolute;
+    padding: 10px;
+    display: flex;
+    cursor: pointer;
+}
+.complete-list .close-complete img {
+    width: 55px;
+    height: 55px;
+    filter: invert(1);
+}
+.complete-list > span {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    cursor: pointer;
+    transition: transform 1s linear;
+}
+.complete-list > span img {
+    width: 40px;
+    height: 40px;
+    filter: invert(1);
+}

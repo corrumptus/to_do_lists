@@ -1,0 +1,37 @@
+.menu_dropdown {
+    width: 32px;
+    height: 32px;
+    padding: 5px;
+    display: grid;
+    gap: 4px;
+    cursor: pointer;
+    position: relative;
+}
+.menu_dropdown .cima, .meio, .baixo {
+    display: flex;
+    align-items: center;
+}
+.menu_dropdown :is(.cima, .meio, .baixo) div {
+    height: 6px;
+    border-radius: 5px;
+    position: absolute;
+    background-color: white;
+    transition: width 0.5s linear, transform 0.5s linear, opacity 0.5s linear;
+}
+.menu_dropdown .cima div:nth-child(1) {
+    transform-origin: left top;
+}
+.menu_dropdown .cima div:nth-child(2) {
+    transform-origin: right top;
+    left: 18px;
+}
+.menu_dropdown .meio div:nth-child(2) {
+    left: 18px;
+}
+.menu_dropdown .baixo div:nth-child(1) {
+    transform-origin: left bottom;
+}
+.menu_dropdown .baixo div:nth-child(2) {
+    transform-origin: right bottom;
+    left: 18px;
+}

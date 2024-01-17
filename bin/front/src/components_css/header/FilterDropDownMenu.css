@@ -1,0 +1,18 @@
+.filter {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #6b6b6b;
+    display: grid;
+    gap: 10px;
+    opacity: 0;
+    transform: translateY(-30px);
+    transition: all 0.3s ease-out;
+    z-index: -1;
+    position: absolute;
+}
+.filter div {
+    display: grid;
+}
+label {
+    font-weight: bold;
+}

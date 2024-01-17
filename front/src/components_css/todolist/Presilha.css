@@ -1,0 +1,23 @@
+.presilha {
+    position: absolute;
+}
+.presilha :is(.cima, .baixo) {
+    display: flex;
+}
+.presilha .baixo {
+    transform: rotate(180deg);
+}
+.quadrado {
+    background-color: gray;
+    box-shadow: inset 0px -1px 1px #555555;
+}
+.triangulo {
+    border-color: gray;
+    border-top: solid gray;
+    border-right: solid gray;
+    border-bottom: solid transparent;
+    border-left: solid transparent;
+}
+.triangulo.direita {
+   transform: rotate(-90deg); 
+}

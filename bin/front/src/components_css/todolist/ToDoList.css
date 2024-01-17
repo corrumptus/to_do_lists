@@ -1,0 +1,7 @@
+.todolist {
+    width: 250px;
+    aspect-ratio: 3/4;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #836767;
+}

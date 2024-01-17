@@ -1,0 +1,26 @@
+.filter {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #dbdbdb;
+    display: grid;
+    gap: 10px;
+    opacity: 0;
+    transform: translateY(-30px);
+    transition: all 0.3s ease-out;
+    z-index: -1;
+    position: absolute;
+}
+.filter div {
+    display: grid;
+}
+.filter label {
+    font-size: 1.3em;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.filter input {
+    background-color: #8f8f8f;
+    border: 2px groove #3f3f3f;
+    border-radius: 7px;
+    text-indent: 3px;
+}

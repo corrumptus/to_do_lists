@@ -1,0 +1,71 @@
+.todo:has(input[type=checkbox]) {
+    display: grid;
+    grid-template-columns: min-content auto min-content;
+    align-items: center;
+}
+.todo:not(:has(input[type=checkbox])) {
+    display: grid;
+    grid-template-columns: auto max-content;
+    align-items: center;
+    gap: 5px;
+    padding-block: 3px;
+}
+.todo input[type=checkbox] {
+    cursor: pointer;
+}
+.todo p {
+    margin: unset;
+    color: #1a1a1a;
+    font-size: 1.2em;
+    font-weight: normal;
+    font-family: cursive;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.todo button {
+    width: 20px;
+    height: 20px;
+    padding: unset;
+    font-size: unset;
+    background-color: transparent;
+    border: unset;
+    cursor: pointer;
+}
+.todo button:hover {
+    background-color: transparent;
+}
+.todo button img {
+    width: 20px;
+    height: 20px;
+}
+.todo input[type=text] {
+    background-color: transparent;
+    border: unset;
+    border-bottom: 1px solid black;
+    font-size: 1.3em;
+    min-width: 0px;
+    color: #2a0eff;
+    outline: unset;
+}
+.todo .edit-todo {
+    display: flex;
+    gap: 3px;
+}
+.todo .edit-todo .accept {
+    background-color: #7dee7d;
+    border-radius: 50%;
+}
+.todo .edit-todo .accept:hover {
+    background-color: #00cc00;
+}
+.todo .edit-todo .cancel {
+    background-color: #e95e5e;
+    border-radius: 50%;
+}
+.todo .edit-todo .cancel:hover {
+    background-color: #ff3636;
+}
+.todo .new-todo {
+    width: 100%;
+}

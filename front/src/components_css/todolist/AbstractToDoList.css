@@ -1,0 +1,27 @@
+.todolist {
+    aspect-ratio: 3/4;
+    border-radius: 10px;
+    background-color: #836767;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.todolist ul {
+    width: 100%;
+    margin: unset;
+    list-style-type: none;
+    background-color: #eded56;
+}
+.todolist .list-action-img {
+    position: absolute;
+    right: 0px;
+    cursor: pointer;
+}
+@keyframes error {
+    0%, 100% {
+        color: #1a1a1a;
+    }
+    50% {
+        color: red;
+    }
+}

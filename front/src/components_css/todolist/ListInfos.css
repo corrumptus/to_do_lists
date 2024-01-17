@@ -1,0 +1,89 @@
+.listInfos {
+    position: absolute;
+    height: 500px;
+    aspect-ratio: 3/4;
+    padding: 30px 20px 10px;
+    border-radius: 15px;
+    background-color: #836767;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+.listInfo {
+    display: grid;
+}
+textarea {
+    resize: none;
+}
+.listInfos p:not(:is(.list-name, .list-description)), .listInfos label {
+    font-size: 1.7em;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: #1e1e1e;
+}
+.listInfos p {
+    white-space: wrap;
+    margin: unset;
+}
+.list-name, .list-description {
+    font-size: 1.4em;
+    font-weight: bold;
+    font-family: cursive;
+    color: #2a0eff;
+}
+.list-name {
+    max-height: 4.7em;
+}
+.list-description {
+    max-height: 7.7em;
+}
+.listInfos :is(input, textarea) {
+    font-size: 1.3em;
+    font-family: cursive;
+    color: #2a0eff;
+    border: 2px groove black;
+    border-radius: 10px;
+    text-indent: 3px;
+    background-color: #e7e7e7;
+}
+.control-buttons {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    gap: 1em;
+}
+.control-buttons button {
+    width: 46px;
+    height: 46px;
+    padding: 3px;
+    border: unset;
+    border-radius: 10px;
+}
+.control-buttons .edit {
+    background-color: #ffb836;
+}
+.control-buttons .edit:hover {
+    background-color: orange;
+}
+.control-buttons .delete {
+    background-color: #e95e5e;
+}
+.control-buttons .delete:hover {
+    background-color: #ff3636;
+}
+.control-buttons .accept {
+    background-color: #7dee7d;
+}
+.control-buttons .accept:hover {
+    background-color: #04c004;
+}
+.control-buttons .cancel {
+    background-color: #e95e5e;
+}
+.control-buttons .cancel:hover {
+    background-color: #ff3636;
+}
+.control-buttons button img {
+    width: 40px;
+}
